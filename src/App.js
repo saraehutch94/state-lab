@@ -8,7 +8,7 @@ export default function App() {
   // USE useState TO CREATE  [bigImage, setBigImage]
   // AND SET IT TO THE IMAGE URL OF THE FIRST ELEMENT IN THE ARRAY
 
-  const [image, setBigImage] = useState(imagesArr[0].img);
+  const [bigImage, setBigImage] = useState(imagesArr[0].img);
 
   // CREATE A HANDLE CLICK FUNCTION THAT ACCEPTS AN IMAGE URL
   // THE FUNCTION SHOULD CALL setBigImage AND PASS IT THE URL
@@ -40,6 +40,7 @@ export default function App() {
         {/* THE SRC IMAGE URL SHOULD BE SET TO THE VALUE THAT IS STORED IN bigImage */}
         {/* <img src="" id="bigimage" alt='bigImage'/> */}
       </div>
+      <img src={bigImage} id="bigImage" alt="bigImage" />
     </div>
   );
 }
