@@ -39,8 +39,8 @@ export default function App() {
         <div id="thumbnails">{images}</div>
         {/* THE SRC IMAGE URL SHOULD BE SET TO THE VALUE THAT IS STORED IN bigImage */}
         {/* <img src="" id="bigimage" alt='bigImage'/> */}
+        <img src={bigImage} id="bigimage" alt="bigImage" />
       </div>
-      <img src={bigImage} id="bigImage" alt="bigImage" />
     </div>
   );
 }
