@@ -8,10 +8,14 @@ export default function App() {
   // USE useState TO CREATE  [bigImage, setBigImage]
   // AND SET IT TO THE IMAGE URL OF THE FIRST ELEMENT IN THE ARRAY
 
-  const [image, setImage] = useState(imagesArr[0].img);
+  const [image, setBigImage] = useState(imagesArr[0].img);
 
   // CREATE A HANDLE CLICK FUNCTION THAT ACCEPTS AN IMAGE URL
   // THE FUNCTION SHOULD CALL setBigImage AND PASS IT THE URL
+
+  const handleClick = (img) => {
+    setBigImage(img);
+  };
 
   // CREATE A VARIABLE CALLED images THAT LOOPs OVER THE imagesArr AND RETURNS AN <IMG> ELEMENT
   // ASSIGN ALL OF THE PROPERTIES THAT IT NEEDS: src, alt, className, key INCLUDING AN onClick EVENT THAT CALLS THE HANDLE EVENT FUNCTION AND PASSES IT THE IMG URL
