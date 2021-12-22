@@ -1,5 +1,6 @@
 // IMPORT useState
 import React, { useState } from "react";
+import imagesArr from "./imageData.js";
 import "./styles.css";
 // IMPORT imageData.js AND STORE IT IN A VARIABLE CALLED imagesArr
 
